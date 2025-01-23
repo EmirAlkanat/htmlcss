@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8em;
+}
+
+
+
+h1{
+    padding:  20px;
+}
+.py-3{ padding: 30px 0;}
+
+.container{
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+h1 a{
+    text-decoration: none;
+    color: bisque;
+    padding-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 10px 0;
+}
+
+.lead{
+    font-size: 18px;
+}
+
+.bg-dark{
+    background:rgb(160, 160, 161);
+}
+
+.bg-light{
+    background:lightsteelblue;
+}
+
+.h-heading{
+    font-size: 40px;
+}
+
+.btn{
+    display: inline-block;
+    font-size: 20px;
+    background: lightsalmon;
+    color: black;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#submit-btn{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    background: black;
+}
+
+#submit-btn:hover{
+    background: lightsalmon;
+}
+
+.btn:hover{
+    background: salmon;
+}
+
+li a {
+    color: beige;
+}
+#navbar{
+    background: black;
+    overflow:auto;
+}
+
+#navbar h1{
+    float: left;
+    padding: 15px;
+}
+
+#navbar ul {
+    list-style: none;
+    float: right;
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar ul li a:hover{
+    background: lightsalmon;
+}
+
+.first-content{
+    background: url('/Img/Havuz.jpeg') no-repeat center center/cover;
+    height:600px;
+}
+
+.primary-text{
+    color: salmon;
+}
+
+.first-content .first-content-header{
+    text-align: center ;
+    padding-top: 190px;
+}
+
+.first-content-header h1 {
+    font-size: 60px;
+    line-height: 1.2em;
+}
+
+.first-content-header p{
+    padding-bottom: 20px;
+    line-height: 1.5em;
+}
+
+#hotel-info{
+    height: 500px;
+}
+
+#hotel-info .img-info{
+    float: left;
+    width: 50%;
+    background: url('/Img/logo.png') no-repeat;
+    min-height: 100%;
+}
+
+#hotel-info .info-content{
+    float: right;
+    width: 50%;
+    height: 100%;
+    
+    filter: brightness(50%); /* Soluk hale getirme */
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
+}
+
+#hotel-info .info-content p {
+    padding-bottom: 30px;
+}
+
+.box {
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+    background: lightsalmon;
+}
+
+.box:hover{
+    background: salmon;
+}
+
+.box i {
+    margin-bottom: 10px;
+}
+
+#main-footer {
+    text-align: center;
+    padding: 20px;
+    background: grey;
+}
+
+/* About html */
+
+#about-info .info-right{
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+
+#about-info .info-right img{
+    display: block;
+    margin: auto;
+    width: 70%;
+    border-radius: 50%;
+}
+
+#about-info .info-left{
+    float: left;
+    width: 50%;
+    min-height: 100%;    
+}
+
+#customer-review{
+    height: 100%;
+    background: url('/Img/spa.jpeg') no-repeat center center/cover;
+    padding-top: 40px;
+}
+
+#customer-review .review img{
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+#customer-review h2{
+    color: salmon;
+    text-align: justify;
+    padding-bottom: 40px;
+}
+
+#customer-review .review{
+    padding: 20px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+/* Contact html */
+
+#contact-form .form-group{
+    margin-bottom: 20px;
+}
+
+#contact-form label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: salmon;
+}
+
+#contact-form textarea {
+    height: 150px;
+}

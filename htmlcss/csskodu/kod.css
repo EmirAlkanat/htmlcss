@@ -1,0 +1,280 @@
+/* Sayfanın ana kısmı */
+body {
+  margin: 0; /* Sayfa kenar boşluklarını sıfırlama */
+  background-color: #497aae; /* Sayfanın arka plan rengini belirleme */
+}
+
+/* Banner resminin görünümü */
+.bannerresim {
+  margin-top: 15px; /* Resmin üst boşluğunu ayarlama */
+  border-radius: 100px; /* Resmin kenarlarını yuvarlama */
+  border: 4px solid rgb(200, 77, 77); /* Resme kenar çizgisi ekleme */
+}
+.Logoresim{
+  
+  margin-top: 15px; /* Resmin üst boşluğunu ayarlama */
+  border-radius: 100px; /* Resmin kenarlarını yuvarlama */
+  border: 4px solid rgb(200, 77, 77); /* Resme kenar çizgisi ekleme */
+}
+/* Sayfa div'inin stilini ayarlama */
+#sayfa {
+  width: auto; /* Genişlik otomatik olacak şekilde ayarlandı */
+  margin: 0 auto; /* Sayfayı ortalama */
+}
+
+/* Banner alanının stilini ayarlama */
+#banner {
+  height: 120px; /* Banner yüksekliği */
+  background-image: url("../img/arkaresim.jpg"); /* Arka plan resmi belirleme */
+  background-repeat: no-repeat; /* Arka planın tekrarlanmaması */
+  background-size: cover; /* Arka planın alanı doldurması */
+}
+
+/* Üst menü listesi için stil */
+#ustmenu li {
+  list-style: none; /* Liste işaretçisini kaldırma */
+}
+
+/* Üst menü bağlantılarının stilini ayarlama */
+#ustmenu a {
+  width: 192.7px; /* Bağlantı genişliği */
+  height: 40px; /* Bağlantı yüksekliği */
+  color: whitesmoke; /* Yazı rengi */
+  background: #082042; /* Arka plan rengi */
+  float: right; /* Bağlantıları sağa hizalama */
+  text-align: center; /* Yazıyı merkeze hizalama */
+  font-family: Helvetica, Arial, sans-serif; /* Yazı fontunu ayarlama */
+  text-decoration: none; /* Alt çizgiyi kaldırma */
+  font-weight: 900; /* Font kalınlığı */
+  display: block; /* Bağlantıları blok olarak gösterme */
+  transition: 1s; /* Geçiş efektini ayarlama */
+  font-size: 17px; /* Yazı boyutu */
+  line-height: 60px; /* Satır yüksekliği */
+}
+
+/* Bağlantıların üzerine gelindiğinde renk değişikliği */
+#ustmenu a:hover {
+  font-family: Helvetica, Arial, sans-serif; /* Yazı fontunu belirleme */
+  text-shadow: 5px 5px 5px #330322; /* Metin gölgesi ekleme */
+  background-color: #3C59EB; /* Arka plan rengini değiştirme */
+  color: #0CE4E8; /* Yazı rengini değiştirme */
+  font-size: 120%; /* Font boyutunu büyütme */
+}
+
+/* Sol bölüm için stil */
+#sol {
+  float: left; /* Sol tarafa hizalama */
+  width: 185px; /* Genişlik */
+  height: 600px; /* Yükseklik */
+  background: #D4E9FF; /* Arka plan rengi */
+  margin-top: 0.5px; /* Üst boşluk */
+}
+
+/* Orta bölüm için stil */
+#orta {
+  float: left; /* Orta kısmı sola hizalama */
+  width: 999px; /* Genişlik */
+  height: 600px; /* Yükseklik */
+  text-align: center; /* Metinleri merkeze hizalama */
+  background-color: #D4E9FF; /* Arka plan rengi */
+  font-family: Calibri, Arial, sans-serif; /* Yazı fontu */
+  overflow: auto; /* Taşan içeriği kaydırmalı yapma */
+}
+
+/* Sağ bölüm için stil */
+#sag {
+  float: right; /* Sağ tarafa hizalama */
+  width: 150px; /* Genişlik */
+  height: 601px; /* Yükseklik */
+  background-color: #0D2740; /* Arka plan rengi */
+  color: whitesmoke; /* Yazı rengi */
+  font-family: Cursive, Arial, sans-serif; /* Yazı fontu */
+  font-weight: 900; /* Yazıyı kalın yapma */
+  font-size: 13px; /* Yazı boyutu */
+}
+
+/* Sağ bölümü ayarlamak için alt çizgi */
+.saghr {
+  display: block; /* Blok seviyesinde gösterme */
+  margin-top: 0.5em; /* Üst boşluk */
+  margin-bottom: 0.5em; /* Alt boşluk */
+  margin-left: auto; /* Otomatik sola hizalama */
+  margin-right: auto; /* Otomatik sağa hizalama */
+  border-style: inset; /* Kenarlık stili */
+  border-width: 3px; /* Kenarlık kalınlığı */
+}
+
+/* Sağdaki bağlantılar için stil */
+#sag a:link {
+  color: white; /* Yazı rengi */
+  background-color: transparent; /* Arka plan rengi şeffaf */
+  text-decoration: none; /* Alt çizgiyi kaldırma */
+}
+
+/* Sağdaki ziyaret edilmiş bağlantılar için stil */
+#sag a:visited {
+  color: white; /* Yazı rengi */
+  background-color: transparent; /* Arka plan rengi şeffaf */
+  text-decoration: none; /* Alt çizgiyi kaldırma */
+}
+
+/* Sağdaki bağlantıların üzerine gelindiğinde renk değişikliği */
+#sag a:hover {
+  color: red; /* Yazı rengini kırmızı yapma */
+  background-color: transparent; /* Arka plan rengi şeffaf */
+  text-decoration: underline; /* Altını çizme */
+}
+
+/* Sağdaki bağlantılara tıklanıldığında görünüm */
+#sag a:active {
+  color: whitesmoke; /* Yazı rengini açma */
+  background-color: transparent; /* Arka plan rengi şeffaf */
+  text-decoration: underline; /* Altını çizme */
+}
+
+/* Alt bölüm için stil */
+#alt {
+  height: 90px; /* Yükseklik */
+  background: rgb(105, 116, 245); /* Arka plan rengi */
+  text-align: center; /* Metni ortalama */
+  font-family: 'Times New Roman', Times, serif; /* Yazı fontu */
+  color: whitesmoke; /* Yazı rengi */
+}
+
+/* Alt bağlantılar için stil */
+#alt a:link {
+  color: white; /* Yazı rengi */
+  background-color: transparent; /* Arka plan rengi şeffaf */
+  text-decoration: none; /* Alt çizgiyi kaldırma */
+}
+
+/* Alt bağlantılara tıklanıldığında görünüm */
+#alt a:visited {
+  color: white; /* Yazı rengi */
+  background-color: transparent; /* Arka plan rengi şeffaf */
+  text-decoration: none; /* Alt çizgiyi kaldırma */
+}
+
+/* Alt bağlantıların üzerine gelindiğinde renk değişikliği */
+#alt a:hover {
+  color: black; /* Yazı rengini siyah yapma */
+  background-color: transparent; /* Arka plan rengi şeffaf */
+  text-decoration: underline; /* Altını çizme */
+}
+
+/* Alt bağlantı tıklandığında */
+#alt a:active {
+  color: rgb(31, 143, 106); /* Yazı rengini değiştirme */
+  background-color: transparent; /* Arka plan rengini şeffaf yapma */
+  text-decoration: underline; /* Altını çizme */
+}
+
+/* Tablo stilleri */
+table {
+  border-collapse: collapse; /* Kenarlıkların birleşmesini sağlama */
+  width: 100%; /* Tablonun genişliğini %100 yapma */
+}
+
+table, th, td {
+  font-size: 20px; /* Yazı boyutu */
+  border: 2px solid rgb(108, 177, 17); /* Kenarlık ekleme */
+  color: black; /* Yazı rengini siyah yapma */
+  text-align: center; /* Yazıyı merkeze hizalama */
+}
+
+/* iframe için kenarlık stilleri */
+iframe {
+  border: 10px solid white; /* iframe etrafına beyaz kenarlık ekleme */
+}
+
+/* Resim için kenarlık stilini ayarlama */
+.cizgi {
+  border: 10px solid white; /* Resmin etrafına beyaz kenarlık ekleme */
+}
+
+/* Giriş formunun stilini ayarlama */
+/* Giriş formunun dış düzeni */
+#girisform2 {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form başlığı */
+#girisform h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #0D2740;
+}
+
+/* Etiket stilleri */
+#girisform label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Giriş alanlarının düzeni */
+#girisform input[type="text"],
+#girisform input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+/* Düğme stilleri */
+#girisform .btn {
+  display: inline-block;
+  width: 100%;
+  padding:10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #0D2740;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#girisform .btn:hover {
+  background-color: #54cdf1;
+}
+
+/* İkincil düğme (Üye Ol) - Boyutu biraz daha küçük */
+#girisform .btn-secondary {
+  background-color: #ccc;
+  color: #000;
+  font-size: 14px; /* Daha küçük font boyutu */
+  padding: 8px; /* Daha küçük iç boşluk */
+  width: auto; /* Tam genişlik yerine kendi içerik boyutunda */
+}
+#girisform .btn-secondary:hover {
+  background-color: #aaa;
+}
+
+/* Şifre unutma linki */
+#girisform .forgot-password {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: #0D2740;
+  text-decoration: none;
+}
+
+#girisform .forgot-password:hover {
+  text-decoration: underline;
+}
+
+

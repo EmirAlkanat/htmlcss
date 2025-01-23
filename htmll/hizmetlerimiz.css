@@ -1,0 +1,120 @@
+
+body {
+    margin: 0;
+    font-family: "Roboto Mono", sans-serif;
+  }
+  
+  header {
+    background-color: white;
+    border-bottom: 2px solid rgb(0, 255, 0);
+    padding: 10px 20px;
+  }
+  
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  .left img, .right img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+
+  .center ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .center ul li a {
+    text-decoration: none;
+    color: rgb(0, 255, 0);
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .center ul li a:hover {
+    color: rgb(0, 150, 0);
+  }
+  
+
+  .hover-textarea {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%;
+    max-width: 400px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .hover-textarea:focus {
+    border-color: rgb(0, 255, 0);
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  }
+  
+
+  .talep textarea {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 90%;
+    max-width: 800px;
+    height: 150px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .talep h2 {
+    text-align: center;
+    color: rgb(0, 255, 0);
+    font-size: 1.5rem;
+  }
+  
+
+  .hover-box6 button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(0, 255, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .hover-box6 button:hover {
+    transform: scale(1.1);
+    background-color: rgb(0, 200, 0);
+  }
+  
+
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer .bottom img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  footer .footeryazi {
+    font-size: 0.9rem;
+  }
+  
+  footer .location, footer .phone {
+    margin: 10px 0;
+  }
+  

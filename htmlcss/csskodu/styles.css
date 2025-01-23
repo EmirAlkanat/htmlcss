@@ -1,0 +1,127 @@
+/* UTF-8 karakter seti belirtme */
+@charset "UTF-8";
+
+/* Ana menü için stil */
+#cssmenu > ul {
+  list-style: none; /* Liste işaretçisini kaldırma */
+  margin: 0; /* Margin sıfırlama */
+  padding: 0; /* Padding sıfırlama */
+  vertical-align: baseline; /* Dikey hizalamayı temel al */
+  line-height: 1; /* Satır yüksekliği */
+  margin-left: 1px; /* Sol margin */
+}
+
+/* Ana menü öğesinin genel düzeni */
+#cssmenu > ul {
+  display: block; /* Menü öğelerini blok düzende göster */
+  position: relative; /* Pozisyonlama yapılandırması */
+  width: 150px; /* Menü genişliği */
+}
+
+/* Menü öğeleri (li) için stil */
+#cssmenu > ul li {
+  display: block; /* Liste öğelerini blok olarak yerleştirme */
+  position: relative; /* Pozisyonlama yapılandırması */
+  margin: 0; /* Margin sıfırlama */
+  padding: 0; /* Padding sıfırlama */
+  width: 120%; /* Liste öğelerinin genişliği */
+}
+
+/* Menü öğelerine tıklama stilini ekleme */
+#cssmenu > ul li a {
+  display: block; /* Bağlantıları blok olarak göster */
+  position: relative; /* Pozisyonlama yapılandırması */
+  margin: 0; /* Margin sıfırlama */
+  border-top: 1px solid #3a3a3a; /* Üst kenarlık */
+  border-bottom: 1px solid #1b1b1b; /* Alt kenarlık */
+  padding: 11px 20px; /* Padding */
+  font-family: Helvetica, Arial, sans-serif; /* Yazı fontu */
+  color: #d8d8d8; /* Yazı rengi */
+  text-decoration: none; /* Alt çizgiyi kaldırma */
+  text-transform: uppercase; /* Tüm harfleri büyük yapma */
+  text-shadow: 0 1px 1px #000; /* Yazı gölgesi */
+  font-size: 14.3px; /* Yazı boyutu */
+  font-weight: 300; /* Font kalınlığı */
+  background: #0D2740; /* Arka plan rengi */
+}
+
+/* İlk menü öğesi için özel stil */
+#cssmenu > ul li:first-child > a {
+  border-top-left-radius: 0px; /* Sol üst köşe yuvarlamayı kaldırma */
+  border-top-right-radius: 0px; /* Sağ üst köşe yuvarlamayı kaldırma */
+  border-top: 0; /* Üst kenarlığı kaldırma */
+}
+
+/* Son menü öğesi için özel stil */
+#cssmenu > ul li:last-child > a {
+  border-bottom-left-radius: 0px; /* Sol alt köşe yuvarlamayı kaldırma */
+  border-bottom-right-radius: 0px; /* Sağ alt köşe yuvarlamayı kaldırma */
+  border-bottom: 0; /* Alt kenarlığı kaldırma */
+}
+
+/* Menü öğesi üzerine gelindiğinde stil değişiklikleri */
+#cssmenu > ul li > a:hover,
+#cssmenu > ul li:hover > a {
+  color: black; /* Yazı rengini siyah yapma */
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3); /* Gölge efektini ayarlama */
+  background: #54cdf1; /* Arka plan rengini değiştirme */
+  background: -webkit-linear-gradient(#72d4f2, #54cdf1); /* Webkit için geçişli arka plan */
+  background: -moz-linear-gradient(#72d4f2, #54cdf1); /* Firefox için geçişli arka plan */
+  background: linear-gradient(#72d4f2, #54cdf1); /* Diğer tarayıcılar için geçişli arka plan */
+  border-color: transparent; /* Kenarlık rengini şeffaf yapma */
+}
+
+/* Drop-down menülerinin ok işaretinin görünümü */
+#cssmenu > ul .has-sub > a::after {
+  content: ""; /* İçeriği belirleme */
+  position: absolute; /* Mutlak pozisyonlama */
+  top: 16px; /* Üst mesafe */
+  right: 10px; /* Sağ mesafe */
+  width: 0px; /* Genişlik */
+  height: 0px; /* Yükseklik */
+  border: 4px solid transparent; /* Kenarlıkları şeffaf yapma */
+  border-left: 4px solid #d8d8d8; /* Sol kenara ok işareti ekleme */
+}
+
+/* Menü öğesinin ok işaretinin koyu görünümü */
+#cssmenu > ul .has-sub > a::before {
+  content: ""; /* İçeriği belirleme */
+  position: absolute; /* Mutlak pozisyonlama */
+  top: 17px; /* Üst mesafe */
+  right: 10px; /* Sağ mesafe */
+  width: 0px; /* Genişlik */
+  height: 0px; /* Yükseklik */
+  border: 4px solid transparent; /* Kenarlıkları şeffaf yapma */
+  border-left: 4px solid #000; /* Sol kenara siyah ok işareti ekleme */
+}
+
+/* Drop-down menülerinin ok işaretinin üzerine gelindiğinde renk değişikliği */
+#cssmenu > ul li > a:hover::after,
+#cssmenu > ul li:hover > a::after {
+  border-left: 4px solid red; /* Ok işaretinin rengini kırmızı yapma */
+}
+
+/* Menü öğesinin ok işaretinin tıklama durumunda rengini değiştirme */
+#cssmenu > ul li > a:hover::before,
+#cssmenu > ul li:hover > a::before {
+  border-left: 4px solid rgba(0, 0, 0, 0.3); /* Ok işaretinin rengini değiştirme */
+}
+
+/* Drop-down menüsünün pozisyonunu ve görünümünü ayarlama */
+#cssmenu > ul ul {
+  position: absolute; /* Mutlak pozisyonlama */
+  left: 100%; /* Sağ tarafa yerleştirme */
+  top: -9999px; /* Gizleme */
+  padding-left: 5px; /* Sol padding */
+  opacity: 0; /* Başlangıçta görünmez yapma */
+  width: 100px; /* Genişlik */
+  -webkit-transition: opacity 0.3s ease-in; /* Webkit için geçiş efekti */
+  -moz-transition: opacity 0.3s ease-in; /* Firefox için geçiş efekti */
+  transition: opacity 0.3s ease-in; /* Diğer tarayıcılar için geçiş efekti */
+}
+
+/* Menü öğesi üzerinde hover yapılınca drop-down menüsünün görünmesini sağlama */
+#cssmenu > ul li:hover > ul {
+  top: 0px; /* Konumunu sıfırlama */
+  opacity: 1; /* Görünür yapma */
+}
